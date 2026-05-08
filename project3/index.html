@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비비드 미 | Vivid Me Official</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+<!-- 네비게이션 바 -->
+<nav class="glass-nav fixed w-full top-0 z-50 py-4 px-6 md:px-12 flex justify-between items-center">
+    <div class="text-2xl font-black vivid-text-gradient italic">VIVID ME</div>
+    <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+        <a href="#about" class="hover:text-indigo-600 transition">소개</a>
+        <a href="#program" class="hover:text-indigo-600 transition">프로그램</a>
+        <a href="#recommend" class="hover:text-indigo-600 transition">추천대상</a>
+        <a href="#event" class="hover:text-indigo-600 transition">이벤트</a>
+    </div>
+    <button onclick="openModal()" class="vivid-gradient text-white px-6 py-2 rounded-full font-bold shadow-lg hover:scale-105 transition active:scale-95">신청하기</button>
+</nav>
+
+<!-- 히어로 섹션 -->
+<header class="pt-32 pb-20 px-6 md:px-12 bg-white overflow-hidden relative">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 animate-fadeIn">
+            <h2 class="text-indigo-600 font-bold tracking-widest mb-4">PERSONAL BRANDING</h2>
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+                나다움이 가장<br><span class="vivid-text-gradient">선명해지는</span> 분위기</comment-tag>
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-lg">
+                단순한 컬러 진단을 넘어, 당신의 성향과 목표를 담은 고유한 이미지를 설계합니다. <span class="font-bold">비비드 미</span>와 함께 당신만의 독보적인 무드를 완성하세요.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <button onclick="openModal()" class="vivid-gradient text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:opacity-90 transition">지금 무료 체험 신청</button>
+                <a href="#about" class="bg-slate-100 text-slate-700 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-slate-200 transition text-center">브랜드 스토리</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 mt-16 md:mt-0 relative flex justify-center">
+            <div class="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-slate-50 shadow-2xl z-10">
+                <img src="img/main.png" alt="Vivid Me Concept" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-pink-100 rounded-full blur-3xl opacity-60"></div>
+            <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-indigo-100 rounded-full blur-3xl opacity-60"></div>
+        </div>
+    </div>
+</header>
+
+<!-- 브랜드 소개 섹션 -->
+<section id="about" class="py-24 px-6 bg-slate-50">
+    <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl md:text-4xl font-bold mb-10">“단순한 컬러 진단을 넘어,<br>나라는 브랜드를 정립하다”</h3>
+        <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
+            <p>
+                비비드 미는 퍼스널컬러 진단과 이미지 브랜딩을 결합해 개인의 <span class="text-indigo-600 font-bold">분위기와 성향, 가치관</span>까지 분석하는 2030 대상 퍼스널 브랜딩 프로그램입니다.
+            </p>
+            <p>
+                <comment-tag content="질문을 통해 독자의 참여를 유도하는 문장으로 다듬었습니다.">"어떤 색이 어울릴까?"라는 고민을 넘어, <br class="hidden md:block">
+                <span class="text-slate-900 font-bold italic">"나는 사람들에게 어떤 공기(Mood)로 기억되고 싶은가?"</span>라는 질문에 답을 찾아가는 여정입니다.</comment-tag>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 프로그램 섹션 -->
+<section id="program" class="py-24 px-6 md:px-12 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-center text-4xl font-black mb-16">The Program</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+            <!-- 1회차 -->
+            <div class="bg-indigo-50 rounded-3xl p-10 border border-indigo-100 card-hover transition duration-300">
+                <div class="bg-indigo-600 text-white w-20 h-8 flex items-center justify-center rounded-full text-xs font-bold mb-6">1회차</div>
+                <h3 class="text-2xl font-bold mb-4">이미지 브랜딩 인터뷰</h3>
+                <p class="text-slate-600 mb-8 leading-relaxed">나의 내면과 외면의 간극을 좁히고, 내가 가진 강점을 극대화하는 최적의 전략을 설계합니다.</p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-indigo-600"></i> 타인이 보는 객관적 첫인상 분석</li>
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-indigo-600"></i> 직업적/사회적 목표에 맞는 이미지 설정</li>
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-indigo-600"></i> 비언어적 커뮤니케이션 코칭</li>
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-indigo-600"></i> 나만의 독보적 키워드 추출</li>
+                </ul>
+            </div>
+            <!-- 2회차 -->
+            <div class="bg-pink-50 rounded-3xl p-10 border border-pink-100 card-hover transition duration-300">
+                <div class="bg-pink-500 text-white w-20 h-8 flex items-center justify-center rounded-full text-xs font-bold mb-6">2회차</div>
+                <h3 class="text-2xl font-bold mb-4">퍼스널 컬러 솔루션</h3>
+                <p class="text-slate-600 mb-8 leading-relaxed">1회차에서 정립한 이미지를 시각적으로 완성하는 최적의 컬러 가이드를 제안합니다.</p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-pink-500"></i> 1:1 정밀 드레이핑 진단</li>
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-pink-500"></i> 메이크업 및 헤어 컬러 큐레이션</li>
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-pink-500"></i> 체형과 분위기를 고려한 패션 제안</li>
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-pink-500"></i> 라이프스타일 활용 가이드북 제공</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 추천 및 포인트 섹션 -->
+<section id="recommend" class="py-24 px-6 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+        <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold mb-8">이런 분들은 꼭 경험해보세요</h2>
+            <div class="space-y-4">
+                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-2xl hover:bg-white/10 transition">
+                    <i class="fa-solid fa-star text-yellow-400 mt-1"></i>
+                    <p class="text-slate-300">중요한 면접이나 미팅을 앞두고 자신감이 필요한 분</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-2xl hover:bg-white/10 transition">
+                    <i class="fa-solid fa-star text-yellow-400 mt-1"></i>
+                    <p class="text-slate-300">나만의 고유한 분위기를 발견하고 싶은 2030</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-2xl hover:bg-white/10 transition">
+                    <i class="fa-solid fa-star text-yellow-400 mt-1"></i>
+                    <p class="text-slate-300">SNS나 포트폴리오에 나만의 색깔을 담고 싶은 분</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-2xl hover:bg-white/10 transition">
+                    <i class="fa-solid fa-star text-yellow-400 mt-1"></i>
+                    <p class="text-slate-300">막연한 유행보다 나에게 맞는 스타일을 찾고 싶은 분</p>
+                </div>
+            </div>
+        </div>
+        <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold mb-8 italic vivid-text-gradient">VIVID ME Point</h2>
+            <div class="space-y-10">
+                <div>
+                    <h4 class="text-xl font-bold mb-2">✔ '겉모습'이 아닌 '이미지' 전체 분석</h4>
+                    <p class="text-slate-400">단순한 색상 판별을 넘어, 당신의 분위기와 말투까지 하나의 무드로 연결합니다.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">✔ 2030의 고민에 가장 공감하는 브랜드</h4>
+                    <p class="text-slate-400">취업, 사회초년생의 인간관계 등 청년 세대의 실질적인 고민을 담아 컨설팅합니다.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">✔ 편안한 대화형 컨설팅</h4>
+                    <p class="text-slate-400">딱딱한 평가가 아닌, 나를 찾아가는 즐거운 대화의 시간으로 구성됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 이벤트 정보 섹션 -->
+<section id="event" class="py-24 px-6 md:px-12 bg-white">
+    <div class="max-w-4xl mx-auto text-center border-4 border-dashed border-indigo-100 rounded-[3rem] p-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-4 bg-indigo-600 text-white font-bold rounded-bl-3xl">LIMITED</div>
+        <h2 class="text-3xl md:text-4xl font-black mb-6">청년 지원 무료 체험 이벤트</h2>
+        <p class="text-slate-600 text-lg mb-10 leading-relaxed">
+            비비드 미는 현재 2030 청년컨설팅 지원 사업의 일환으로<br>
+            <span class="font-bold text-indigo-600">이미지 브랜딩 & 퍼스널컬러 풀패키지</span>를 무료로 제공합니다.
+        </p>
+        <div class="bg-slate-50 p-8 rounded-3xl inline-block mb-10">
+            <p class="text-slate-400 line-through text-lg mb-2">정상가 168,000원</p>
+            <p class="text-4xl font-black text-pink-500 underline decoration-indigo-200">체험 전액 무료</p>
+        </div>
+        <p class="text-slate-400 text-sm mb-10">※ 후기 인터뷰 기반으로 진행되며, 노쇼 방지를 위해 소수의 인원만 선발합니다.</p>
+        <button onclick="openModal()" class="vivid-gradient text-white px-12 py-5 rounded-3xl font-black text-xl shadow-2xl hover:scale-105 transition active:scale-95">지금 바로 신청하기</button>
+    </div>
+</section>
+
+<!-- 푸터 -->
+<footer class="py-16 px-6 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+        <div>
+            <h2 class="text-2xl font-black italic vivid-text-gradient mb-2">VIVID ME</h2>
+            <p class="text-slate-500 font-medium italic">당신만의 고유한 무드를 발견해보세요.</p>
+        </div>
+        <div class="flex gap-4">
+            <a href="https://www.instagram.com/vivid_me_official" target="_blank" class="w-14 h-14 flex items-center justify-center rounded-2xl bg-white border border-slate-200 text-pink-500 text-2xl hover:bg-pink-50 transition shadow-sm"><i class="fab fa-instagram"></i></a>
+            <a href="http://pf.kakao.com/_gsUEX" target="_blank" class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#FEE500] text-[#3C1E1E] text-2xl hover:opacity-90 transition shadow-sm"><i class="fas fa-comment"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- 신청 모달 -->
+<div id="applyModal">
+    <!-- 모달 크기를 조절하기 위해 max-w-2xl로 변경하고 스크롤 가능하게 수정 -->
+    <div class="bg-white w-full max-w-2xl p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative mx-4 max-h-[90vh] overflow-y-auto">
+        <button onclick="closeModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900 text-2xl"><i class="fas fa-times"></i></button>
+        <h3 class="text-3xl font-black mb-2">체험 신청</h3>
+        <p class="text-slate-500 mb-8 font-medium">정보를 입력해주시면 24시간 내에 안내 전화를 드립니다.</p>
+        
+        <form id="vividSubmitForm" class="space-y-6">
+            <!-- 1 & 2. 이름 및 성별 -->
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">이름</label>
+                    <input type="text" name="name" required class="w-full px-5 py-3 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium" placeholder="성함">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">성별</label>
+                    <select name="gender" required class="w-full px-5 py-3 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium">
+                        <option value="여">여성</option>
+                        <option value="남">남성</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 3 & 4. 나이 및 주소 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">나이 (만 나이)</label>
+                    <input type="number" name="age" required class="w-full px-5 py-3 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium" placeholder="예: 25">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">주소 (동 or 가까운 역)</label>
+                    <input type="text" name="location" required class="w-full px-5 py-3 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium" placeholder="예: 역삼동, 강남역">
+                </div>
+            </div>
+
+            <!-- 5. 직업 -->
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-2">직업 (대학생은 전공 포함)</label>
+                <input type="text" name="job" required class="w-full px-5 py-3 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium" placeholder="예: 마케팅, 대학생(경영학과)">
+            </div>
+
+            <!-- 6 & 7. 도움 받고 싶은 부분 -->
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-2">퍼스널 컬러를 통해 도움 받고 싶은 부분</label>
+                <input type="text" name="help_pc" class="w-full px-5 py-3 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium" placeholder="예: 메이크업, 패션, 헤어컬러 등">
+            </div>
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-2">이미지 브랜딩을 통해 도움 받고 싶은 부분</label>
+                <input type="text" name="help_ib" class="w-full px-5 py-3 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium" placeholder="예: 자존감, 분위기, 인간관계 등">
+            </div>
+
+            <!-- 8. 참여 가능 일시 -->
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-2">참여 가능한 일시</label>
+                <input type="text" name="available_time" required class="w-full px-5 py-3 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium" placeholder="예: 평일 17~21시, 주말 11~20시">
+            </div>
+
+            <!-- 9 & 10. 연락처 및 인스타 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+    <label class="block text-sm font-bold text-slate-700 mb-2">연락처</label>
+    <input type="tel" 
+           name="phone" 
+           required 
+           pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"
+           title="010-0000-0000 형식으로 입력해주세요."
+           oninput="this.value = this.value.replace(/[^0-9-]/g, '')"
+           class="w-full px-5 py-3 bg-slate-100 border-none rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium" 
+           placeholder="010-1234-6789로 입력해주세요">
+</div>
+
+            <button type="submit" id="submitBtn" class="w-full vivid-gradient text-white py-5 rounded-2xl font-black text-xl shadow-xl hover:opacity-90 transition mt-4">신청 완료하기</button>
+        </form>
+    </div>
+</div>
+<script src="script/scripts.js"></script>
+</body>
+</html>
