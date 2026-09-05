@@ -14,16 +14,20 @@ const components = [
 Promise.all(
     components.map(name =>
         fetch(`html/${name}.html`)
-        .then(res => res.text())
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`Failed to load html/${name}.html (${res.status})`);
+            }
+            return res.text();
+        })
         .then(data => {
-            document.getElementById(name).innerHTML = data;
+            const target = document.getElementById(name);
+            if (target) target.innerHTML = data;
         })
     )
 ).then(() => {
-
-    // 모든 html이 로드된 후 실행
-    if (typeof initPage === "function") {
-        initPage();
-    }
-
+    // Components must be fully loaded before qna.js starts rendering Q&A/reviews.
+    document.dispatchEvent(new CustomEvent('componentsLoaded'));
+}).catch(error => {
+    console.error('Component loading failed:', error);
 });

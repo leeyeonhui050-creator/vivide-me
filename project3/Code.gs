@@ -2,14 +2,16 @@ const SPREADSHEET_ID = '1AsqTSyFzYNztYpPhOCF5tqbHnu1RRowaVyVI7Kluzos';
 const DRIVE_FOLDER_ID = '1plRcBAG0PJlINp8ye0ELddgpg4CZqUGF';
 
 function getSpreadsheet() {
-  try {
-    return SpreadsheetApp.getActiveSpreadsheet();
-  } catch (error) {
-    if (SPREADSHEET_ID) {
-      return SpreadsheetApp.openById(SPREADSHEET_ID);
-    }
-    throw error;
+  const activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  if (activeSpreadsheet) {
+    return activeSpreadsheet;
   }
+
+  if (SPREADSHEET_ID) {
+    return SpreadsheetApp.openById(SPREADSHEET_ID);
+  }
+
+  throw new Error('스프레드시트를 찾을 수 없습니다. SPREADSHEET_ID를 확인해주세요.');
 }
 
 function getOrCreateSheet(type) {
